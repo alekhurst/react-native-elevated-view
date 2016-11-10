@@ -1,0 +1,11 @@
+{
+  "name": "react-native-elevated-view",
+  "version": "0.0.1",
+  "description": "Cross platform solution to elevation for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alek Hurst",
+  "license": "ISC"
+}
