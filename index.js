@@ -12,16 +12,16 @@ export default class ElevatedView extends React.Component {
       case 1:
         iosShadowElevation = {
           shadowOpacity: 0.12,
-          shadowRadius: 0.7,
+          shadowRadius: 0.8,
           shadowOffset: {
-            height: 0.7,
+            height: 0.8,
           },
         };
         break;
       case 2:
         iosShadowElevation = {
           shadowOpacity: 0.18,
-          shadowRadius: 0.8,
+          shadowRadius: 0.9,
           shadowOffset: {
             height: 1,
           },
@@ -29,28 +29,28 @@ export default class ElevatedView extends React.Component {
         break;
       case 3:
         iosShadowElevation = {
-          shadowOpacity: 0.20,
-          shadowRadius: 1.3,
+          shadowOpacity: 0.18,
+          shadowRadius: 1.4,
           shadowOffset: {
-            height: 1.9,
+            height: 2,
           },
         };
         break;
       case 4:
         iosShadowElevation = {
-          shadowOpacity: 0.20,
-          shadowRadius: 2.3,
+          shadowOpacity: 0.18,
+          shadowRadius: 2.5,
           shadowOffset: {
-            height: 2.5,
+            height: 2.8,
           },
         };
         break;
       case 5:
         iosShadowElevation = {
           shadowOpacity: 0.24,
-          shadowRadius: 3,
+          shadowRadius: 3.2,
           shadowOffset: {
-            height: 3.5,
+            height: 4,
           },
         };
         break;

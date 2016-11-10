@@ -24,7 +24,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import ElevatedView from 'react-native-elevated-view'
 
-class App extends React.Component {'
+class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
