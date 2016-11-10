@@ -3,9 +3,25 @@
   "version": "0.0.1",
   "description": "Cross platform solution to elevation for React Native",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alekhurst/react-native-elevated-view.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "react-native",
+    "react-native-elevated-view",
+    "react",
+    "native",
+    "elevated",
+    "view",
+    "elevation",
+    "ios",
+    "android",
+    "react native",
+  ],
   "author": "Alek Hurst",
   "license": "ISC"
 }
