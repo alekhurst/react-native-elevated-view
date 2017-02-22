@@ -3,10 +3,15 @@ import { View, Platform } from 'react-native';
 
 export default class ElevatedView extends React.Component {
   render() {
-    let { elevation, style, ...otherProps } = this.props;
-    let iosShadowElevation = {
-      shadowColor: 'black',
-    };
+    const { elevation, style, ...otherProps } = this.props;
+    
+    if(Platform.OS === 'android'){
+      return (<View elevation={elevation} style={style} {...otherProps}>
+	      {this.props.children}
+      </View>);
+    }
+
+    let iosShadowElevation = {};
 
     switch (elevation) {
       case 1:
@@ -58,13 +63,10 @@ export default class ElevatedView extends React.Component {
         break;
     }
 
-    return Platform.select({
-      ios: <View style={[iosShadowElevation, style]} {...otherProps}>
+    iosShadowElevation.shadowColor = 'black';
+
+    return (<View style={[iosShadowElevation, style]} {...otherProps}>
         {this.props.children}
-      </View>,
-      android: <View elevation={elevation} style={style} {...otherProps}>
-        {this.props.children}
-      </View>,
-    });
+      </View>);
   }
 }
