@@ -1,6 +1,6 @@
 {
   "name": "react-native-elevated-view",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cross platform solution to elevation for React Native",
   "main": "index.js",
   "repository": {
