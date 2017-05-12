@@ -31,10 +31,10 @@ export default class ElevatedView extends React.Component {
 
     //calculate iosShadows here
     const iosShadowElevation = {
-      shadowOpacity: 0.0015 * elevation + 0.19,
+      shadowOpacity: 0.0015 * elevation + 0.18,
       shadowRadius: 0.54 * elevation,
       shadowOffset: {
-        height: 0.65 * elevation,
+        height: 0.6 * elevation,
       },
     };
 
