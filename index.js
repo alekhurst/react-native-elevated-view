@@ -12,21 +12,20 @@ export default class ElevatedView extends React.Component {
   render() {
     const { elevation, style, ...otherProps } = this.props;
 
-    //Return default View if elevation is 0
-    if (elevation === 0) {
-      return (
-        <View style={style} {...otherProps}>
-          {this.props.children}
-        </View>
-      )
-    }
-
     if (Platform.OS === 'android') {
       return (
         <View elevation={elevation} style={style} {...otherProps}>
           {this.props.children}
         </View>
       );
+    }
+
+    if (elevation === 0) {
+      return (
+        <View style={style} {...otherProps}>
+          {this.props.children}
+        </View>
+      )
     }
 
     //calculate iosShadows here
