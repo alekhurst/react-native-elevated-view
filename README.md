@@ -54,7 +54,7 @@ var styles = StyleSheet.create({
 
 ## Props
 
-- **`elevation`** _(Integer)_ - Must be between 0 and 5. The elevation you would like the elevated view to appear at.
+- **`elevation`** _(Integer)_ - Must be between 0 and 24. The elevation you would like the elevated view to appear at.
 
 ## Contribution
 **Issues** and **Pull requests** are welcome!
