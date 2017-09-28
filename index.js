@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { View, Platform } from 'react-native';
 
 export default class ElevatedView extends React.Component {
   static propTypes = {
-    elevation: React.PropTypes.number,
+    elevation: PropTypes.number,
   };
   static defaultProps = {
     elevation: 0
