@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Platform } from 'react-native';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 export default class ElevatedView extends React.Component {
   static propTypes = {
