@@ -15,7 +15,7 @@ export default class ElevatedView extends React.Component {
 
     if (Platform.OS === 'android') {
       return (
-        <View elevation={elevation} style={style} {...otherProps}>
+        <View style={[{ elevation, backgroundColor: 'transparent' }, style ]} {...otherProps}>
           {this.props.children}
         </View>
       );
